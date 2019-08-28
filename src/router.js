@@ -23,6 +23,11 @@ export default new Router({
       path: '/zoo',
       name: 'zoo',
       component: () => import('./views/Zoo.vue')
+    },
+    {
+      path: '/foot',
+      name: 'foot',
+      component: () => import('./views/Foot.vue')
     }
   ]
 })

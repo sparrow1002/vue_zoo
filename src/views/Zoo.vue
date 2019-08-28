@@ -3,68 +3,6 @@
     <h1>This is a zoo page</h1>
     <v-btn small color="normal" @click="addItemDailogShow = true"><font face="微軟正黑體" size="3">新增</font></v-btn>
     <app-save/> <!-- 新增按鈕放在Save.vue -->
-    <!-- 台大糖尿病足 -->
-    <img src="../assets/left_foot.png" width="145" height="126" alt="leftPlanetmap" usemap="#leftPlanetmap">
-    <img src="../assets/right_foot.png" width="145" height="126" alt="rightPlanetmap" usemap="#rightPlanetmap">
-
-<map name="leftPlanetmap">
-  <area shape="polygon" coords="0,0,25,0,40,90,20,92" alt="leftFoot_1" href=javascript:void(0) @click="clickImg('left_foot_area_1')">
-  <area shape="polygon" coords="26,0,70,20,60,100,41,91" alt="leftFoot_2" href=javascript:void(0) @click="clickImg('left_foot_area_2')">
-  <area shape="polygon" coords="20,93,40,91,48,120,20,120" alt="leftFoot_3" href=javascript:void(0) @click="clickImg('left_foot_area_3')">
-  <area shape="polygon" coords="41,91,61,100,51,120" alt="leftFoot_4" href=javascript:void(0) @click="clickImg('left_foot_area_4')">
-  <area shape="polygon" coords="75,20,135,5,125,120,80,120" alt="leftFoot_5" href=javascript:void(0) @click="clickImg('left_foot_area_5')">
-</map>
-<map name="rightPlanetmap">
-  <area shape="polygon" coords="115,0,145,0,130,94,106,92" alt="rightFoot_1" href=javascript:void(0) @click="clickImg('right_foot_area_1')">
-  <area shape="polygon" coords="80,20,114,0,105,91,88,100" alt="rightFoot_2" href=javascript:void(0) @click="clickImg('right_foot_area_2')">
-  <area shape="polygon" coords="105,91,135,93,125,125,100,125" alt="rightFoot_3" href=javascript:void(0) @click="clickImg('right_foot_area_3')">
-  <area shape="polygon" coords="85,100,105,91,95,120" alt="rightFoot_4" href=javascript:void(0) @click="clickImg('right_foot_area_4')">
-  <area shape="polygon" coords="2,10,70,15,65,120,20,120" alt="rightFoot_5" href=javascript:void(0) @click="clickImg('right_foot_area_5')">
-</map>
-        <v-flex xs12>足部範圍1</v-flex>
-        <v-flex>
-          <v-card>
-            <v-container
-              grid-list-sm
-              fluid>
-              <v-layout wrap>
-                <v-flex
-                  v-for="n in 9"
-                  :key="n"
-                  xs4
-                  d-flex
-                  child-flex
-                >
-                  <v-card
-                    flat
-                    tile
-                    class="d-flex">
-                    <v-img
-                      :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                      :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-                      aspect-ratio="1"
-                      class="grey lighten-2"
-                    >
-                      <template v-slot:placeholder>
-                        <v-layout
-                          fill-height
-                          align-center
-                          justify-center
-                          ma-0
-                        >
-                          <v-progress-circular
-                            indeterminate
-                            color="grey lighten-5" />
-                        </v-layout>
-                      </template>
-                    </v-img>
-                  </v-card>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-card>
-        </v-flex>
-        <!-- 台大糖尿病足 -->
     <v-text-field
           v-model="search"
           append-icon="search"
@@ -251,3 +189,10 @@ export default {
   }
 }
 </script>
+
+<style lang='css' scoped>
+.zoo {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+</style>

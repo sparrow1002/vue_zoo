@@ -21,7 +21,7 @@
   <area shape="polygon" coords="85,100,105,91,95,120" alt="rightFoot_4" href=javascript:void(0) @click="clickImg('right_foot_area_4')">
   <area shape="polygon" coords="2,10,70,15,65,120,20,120" alt="rightFoot_5" href=javascript:void(0) @click="clickImg('right_foot_area_5')">
 </map>
-        <v-flex xs12>足部範圍</v-flex>
+        <v-flex xs12>足部範圍1</v-flex>
         <v-flex>
           <v-card>
             <v-container

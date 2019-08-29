@@ -2,7 +2,7 @@
   <div class="zoo">
     <h1>This is a zoo page</h1>
     <v-btn small color="normal" @click="addItemDailogShow = true"><font face="微軟正黑體" size="3">新增</font></v-btn>
-    <app-save/> <!-- 新增按鈕放在Save.vue -->
+    <app-save/> <!-- 測試按鈕放在Save.vue -->
     <v-text-field
           v-model="search"
           append-icon="search"
@@ -174,10 +174,11 @@ export default {
     ...mapMutations([
       // 通常是呼叫action, 比較少直接呼叫mutataion, mutation用來改變值
     ]),
-    clickEditItem: (item) => {
+    clickEditItem (item) {
       console.log('item', item)
       console.log('this.editItem', this.editItem)
       this.editItem = item
+      this.editItem.levelSelected = item.level
     },
     submitEditItem: (editItem) => {
       console.log('submitEditItem')

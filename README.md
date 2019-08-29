@@ -1,5 +1,9 @@
 # zoo
 
+# Description
+1. vuetify, vuex練習
+2. SVG CSS練習
+
 ## Project setup
 ```
 npm install
@@ -27,5 +31,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-### test
